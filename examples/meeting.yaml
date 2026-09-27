@@ -1,0 +1,19 @@
+# Optional context for `meeting-tool transcribe -c examples/meeting.yaml`.
+# Every field is optional. Participants can be plain names or {name, role}.
+title: Họp kế hoạch sprint 42
+date: 2026-09-27
+location: Phòng họp 3A
+participants:
+  - Anh Tuấn (PM)
+  - name: Chị Lan
+    role: QA
+  - Anh Minh
+agenda:
+  - Demo tính năng thanh toán
+  - Phân công sprint 42
+  - Ngân sách hạ tầng
+# Names and terms the model should spell exactly like this
+glossary:
+  - VNPay
+  - Kubernetes
+notes: Cuộc họp nội bộ đội sản phẩm.

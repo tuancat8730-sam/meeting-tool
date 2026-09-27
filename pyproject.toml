@@ -50,6 +50,7 @@ select = ["E", "F", "I", "B", "UP", "SIM", "RUF"]
 python_version = "3.13"
 strict = true
 mypy_path = "src"
+plugins = ["pydantic.mypy"]
 
 [[tool.mypy.overrides]]
 module = ["pydub.*", "litellm.*", "jiwer.*"]
@@ -57,5 +58,7 @@ ignore_missing_imports = true
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
+pythonpath = ["."]
+filterwarnings = ["ignore::SyntaxWarning"]
 addopts = "-ra --strict-markers"
 markers = ["live: calls real LLM APIs (needs API keys; run with -m live)"]
