@@ -1,2 +1,1 @@
 # meeting-tool
-meeting-tool
